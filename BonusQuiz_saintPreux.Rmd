@@ -39,14 +39,24 @@ x = gen_gts(n, model)
 plot(x)
 
 # 8) Subset observations in this new 'x' to extract only positive observations and name this subset 'x_pos'.
+x_pos<-x>0
 
 # 9) Modify the same code from Question 7 to generate a vector of length n = 100.
+?gen_gts
+library(simts)
+model = AR1(phi = .5, sigma2 = .1) + WN(sigma2=1)
+n=100
+x = gen_gts(n, model)
+plot(x)
 
 # 10) Run the following lines of code to obtain the object `dates` and convert this object into a date format recognizable for R:
 #year <- round(runif(100, 1900, 2020))
 #day <- round(runif(100, 1, 28))
 #month <- round(runif(100, 1, 12))
 #dates <- apply(cbind(day, month, year), 1, paste, collapse = "/")
+
+year <- round(runif(100, 1900, 2020))
+
 
 # Optional: Create a plot of the object `x` generated in Question 10 where the y-axis represents the values of `x` and the x-axis represents the `dates` object formatted correctly. Use the plot() function with the argument `type = "l"`.
 
