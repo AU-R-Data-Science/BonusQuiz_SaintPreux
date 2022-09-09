@@ -50,19 +50,16 @@ x = gen_gts(n, model)
 plot(x)
 
 # 10) Run the following lines of code to obtain the object `dates` and convert this object into a date format recognizable for R:
-#year <- round(runif(100, 1900, 2020))
-#day <- round(runif(100, 1, 28))
-#month <- round(runif(100, 1, 12))
-#dates <- apply(cbind(day, month, year), 1, paste, collapse = "/")
-
 year <- round(runif(100, 1900, 2020))
+day <- round(runif(100, 1, 28))
+month <- round(runif(100, 1, 12))
+dates <- apply(cbind(day, month, year), 1, paste, collapse = "/")
 
+dates<-as.Date(dates, format="%Y/%m/%d")
 
 # Optional: Create a plot of the object `x` generated in Question 10 where the y-axis represents the values of `x` and the x-axis represents the `dates` object formatted correctly. Use the plot() function with the argument `type = "l"`.
 
 =======
----
-title: "In class quiz"
 output: html_document
 date: '2022-09-08'
 ---
