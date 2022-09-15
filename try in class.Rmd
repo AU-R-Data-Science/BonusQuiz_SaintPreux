@@ -1,0 +1,18 @@
+---
+title: "Try in class"
+output: html_document
+date: '2022-09-15'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#create vector 
+x<- c(1, 2 , 3)
+x <- 1:100
+x
+#only consider a vector with numeric intenger 
+y<-as.numeric(1:100)
+y
+
