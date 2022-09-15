@@ -15,4 +15,7 @@ x
 #only consider a vector with numeric intenger 
 y<-as.numeric(1:100)
 y
+#Creating a sequence 
+(z <- 1.3:3)
+z
 
